@@ -1,0 +1,31 @@
+{
+  "name": "Graphite",
+  "description": "JS library for work with PSD files",
+  "version": "0.1.0",
+  "author": "Max Lukoyanov",
+  "license": "MIT",
+  "repository": "git@gitlab.com:lumaxus/graphite.git",
+  "main": "dist/graphite.js",
+  "README": "README.md",
+  "scripts": {
+    "build-dev": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --progress --colors",
+    "build-prod": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --colors",
+    "dev": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --content-base ./debug/ --colors --hot"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.4.18"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.0.1",
+    "iconv-lite": "^0.4.18",
+    "webpack": "^3.4.1",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
